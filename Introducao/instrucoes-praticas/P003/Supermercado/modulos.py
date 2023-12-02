@@ -23,7 +23,7 @@ def moduloInserirProduto(products_list):
     # Inserir produto
     products_list.append(product)
 
-    print('Produto adicionado com sucesso!')
+    print('\nProduto adicionado com sucesso!')
 
 def moduloExcluirProduto(products_list):
     product_code = input("Insira o código do produto: ") 
@@ -40,9 +40,9 @@ def moduloExcluirProduto(products_list):
         # Remover produto
        products_list.pop(product_index)
 
-       print('Produto removido com sucesso!')
+       print('\nProduto removido com sucesso!')
     else:
-       print(f'Este produto, referente ao código {product_code}, não existe.')
+       print(f'\nEste produto, referente ao código {product_code}, não existe.')
 
 def moduloListarProdutos(products_list):
     print('Produtos cadastrados até o momento:')
@@ -78,9 +78,9 @@ def moduloConsultarProduto(products_list):
        # Buscar pelo preço do produto
        product_price = list(filter(lambda item: item['code'] == product_code, products_list))[0]['price']
        
-       print(f'O produto de código {product_code} custa {product_price} reais.')
+       print(f'\nO produto de código {product_code} custa {product_price} reais.')
     else:
-       print(f'Este produto, referente ao código {product_code}, não existe.')
+       print(f'\nEste produto, referente ao código {product_code}, não existe.')
 
 
 
